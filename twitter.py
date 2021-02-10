@@ -23,7 +23,7 @@ class TwitterClient(object):
             self.retweets_only = retweets_only
             self.with_sentiment = with_sentiment
             self.api = tweepy.API(self.auth)
-            self.tweet_count_max = 100  # To prevent Rate Limiting
+            self.tweet_count_max = 100000  # To prevent Rate Limiting
         except:
             print("Error: Authentication Failed")
 
